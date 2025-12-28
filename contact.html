@@ -78,14 +78,20 @@
       <section class="section alt">
         <div class="container contact-grid">
           <!-- LEFT -->
-          <div class="contact-copy">
-            <h2>Let’s Create Something Meaningful</h2>
-            <p class="about-story">
-              Whether you're planning a portrait session, event, or editorial
-              shoot, I’d love to hear more about your vision.
-            </p>
+          <div class="contact-left">
+            <div class="contact-intro">
+              <h2>Let's Create Something Meaningful</h2>
+              <p class="about-story">
+                Whether you're planning a portrait session, event, or editorial
+                shoot, I'd love to hear more about your vision.
+              </p>
+              <p class="contact-reassurance">
+                Every inquiry is personally reviewed and replied to within 24 hours.
+              </p>
+            </div>
 
             <div class="contact-details">
+              <h3>Get in Touch</h3>
               <div class="detail">
                 <span class="detail-label">Email</span>
                 <span class="detail-value">
@@ -106,54 +112,101 @@
               </div>
             </div>
 
-            <div class="about-cta">
+            <div class="contact-cta">
               <button class="btn primary js-open-booking">
                 Book a Session
               </button>
-              <a href="portfolio.html" class="btn ghost"> View Portfolio </a>
+              <a href="portfolio.html" class="contact-secondary-link">View Portfolio</a>
             </div>
           </div>
 
-          <!-- RIGHT: FALLBACK FORM -->
-          <form
-            class="form"
-            action="mailto:hello@example.com"
-            method="post"
-            enctype="text/plain"
-          >
-            <label>
-              Name
-              <input type="text" name="name" required />
-            </label>
+          <!-- RIGHT: INQUIRY FORM -->
+          <div class="contact-form-wrapper">
+            <h3 style="margin-bottom: 8px;">Send an Inquiry</h3>
+            <p class="micro muted" style="margin-bottom: 24px;">
+              Have a question or want to discuss a project? Fill out the form below and I'll get back to you within 24 hours.
+            </p>
+            
+            <form
+              class="form contact-form"
+              name="contact-inquiry"
+              method="POST"
+              data-netlify="true"
+            >
+              <input type="hidden" name="form-name" value="contact-inquiry" />
 
-            <div class="row">
-              <label>
-                Email
-                <input type="email" name="email" required />
-              </label>
+              <div class="row">
+                <label>
+                  <span>First Name*</span>
+                  <input
+                    name="firstName"
+                    type="text"
+                    autocomplete="given-name"
+                    required
+                  />
+                </label>
+                <label>
+                  <span>Last Name</span>
+                  <input
+                    name="lastName"
+                    type="text"
+                    autocomplete="family-name"
+                  />
+                </label>
+              </div>
+
+              <div class="row">
+                <label>
+                  <span>Email*</span>
+                  <input
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                  />
+                </label>
+                <label>
+                  <span>Phone</span>
+                  <input
+                    name="phone"
+                    type="tel"
+                    autocomplete="tel"
+                  />
+                </label>
+              </div>
 
               <label>
-                Shoot Type
-                <select name="type">
-                  <option>Portrait</option>
-                  <option>Wedding</option>
-                  <option>Event</option>
-                  <option>Editorial</option>
+                <span>Inquiry Type</span>
+                <select name="inquiryType">
+                  <option value="" selected>General Question</option>
+                  <option>Portrait Session</option>
+                  <option>Couples Session</option>
+                  <option>Event Photography</option>
+                  <option>Commercial Project</option>
+                  <option>Pricing Information</option>
+                  <option>Other</option>
                 </select>
               </label>
-            </div>
 
-            <label>
-              Message
-              <textarea name="message" rows="4"></textarea>
-            </label>
+              <label>
+                <span>Message*</span>
+                <textarea
+                  name="message"
+                  rows="6"
+                  required
+                  placeholder="Tell me about your project, questions, or what you'd like to discuss..."
+                ></textarea>
+              </label>
 
-            <button class="btn primary full" type="submit">Send Message</button>
+              <button class="btn primary full" type="submit">
+                Send Inquiry
+              </button>
 
-            <p class="micro muted">
-              Prefer a faster response? Use the booking button instead.
-            </p>
-          </form>
+              <p class="micro muted" style="margin-top: 16px; text-align: center;">
+                For booking a specific session date, please use the "Book a Session" button above.
+              </p>
+            </form>
+          </div>
         </div>
       </section>
     </main>
