@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services & Pricing | Hana Kuroda Photography</title>
+    <meta
+      name="description"
+      content="Photography packages and pricing by Hana Kuroda. Portraits, couples, events, and commercial photography in Tokyo."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark"></span>
+          <span class="brand-text">
+            <span class="brand-name">Hana Kuroda</span>
+            <span class="brand-sub">Photography</span>
+          </span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="service-pricing.html" aria-current="page">Services</a>
+          <a href="testimonials.html">Testimonials</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html" class="btn small">Contact</a>
+          <button class="btn small primary js-open-booking">Book</button>
+        </nav>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" hidden>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="service-pricing.html">Services</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <button class="btn primary full js-open-booking">Book a Session</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- INTRO -->
+      <section class="section hero-with-bg hero-services">
+        <div class="container section-head">
+          <h2>Services & Pricing</h2>
+          <p class="muted">
+            Simple, transparent packages designed to capture moments naturally and beautifully.
+          </p>
+          <p class="muted">
+            Each session includes professional editing, high-resolution digital files, and a personalized approach tailored to your vision. Whether you're planning a portrait session, celebrating a milestone, or documenting a special event, I'm here to make the process seamless and the results meaningful.
+          </p>
+        </div>
+      </section>
+
+      <!-- PACKAGES -->
+      <section class="section alt">
+        <div class="container pricing-grid">
+          <!-- BASIC -->
+          <article class="price-card">
+            <h3>Basic Session</h3>
+            <p class="price">¥18,000 – ¥28,000</p>
+            <p class="micro muted">
+              Ideal for individuals needing professional headshots, LinkedIn
+              photos, or simple portrait sessions. Perfect for first-time
+              clients or those seeking a quick, focused session.
+            </p>
+
+            <ul>
+              <li><strong>30 minutes</strong> shooting time</li>
+              <li><strong>10 edited</strong> high-resolution images</li>
+              <li>Online gallery delivery</li>
+              <li>Personal usage rights</li>
+              <li>Turnaround: 7 days</li>
+            </ul>
+
+            <p class="micro muted">
+              Add-ons: Extra edited images ¥1,200 / image
+            </p>
+
+            <button class="btn ghost full js-open-booking">
+              Check Availability
+            </button>
+          </article>
+
+          <!-- STANDARD -->
+          <article class="price-card featured">
+            <span class="tag">Most Popular</span>
+            <h3>Standard Session</h3>
+            <p class="price">¥35,000 – ¥55,000</p>
+            <p class="micro" style="font-weight: 500; margin: 6px 0 10px">
+              The perfect balance of quality, coverage, and value.
+            </p>
+            <p class="micro muted">
+              Best suited for couples, families, or individuals wanting a
+              comprehensive session with multiple looks and locations. Great for
+              engagement photos, anniversary sessions, or creating a diverse
+              portfolio of images.
+            </p>
+
+            <ul>
+              <li><strong>60 minutes</strong> shooting time</li>
+              <li><strong>25 edited</strong> high-resolution images</li>
+              <li>Online gallery delivery</li>
+              <li>Personal usage rights</li>
+              <li>48–72h sneak peeks</li>
+              <li>Turnaround: 7–10 days</li>
+            </ul>
+
+            <button class="btn primary full js-open-booking">
+              Book Standard
+            </button>
+          </article>
+
+          <!-- PREMIUM -->
+          <article class="price-card">
+            <h3>Premium / Events</h3>
+            <p class="price">¥70,000+</p>
+            <p class="micro muted">
+              Designed for intimate weddings, corporate events, brand
+              photography, and special occasions requiring extended coverage.
+              Perfect for businesses, event organizers, or couples planning
+              milestone celebrations.
+            </p>
+
+            <ul>
+              <li><strong>2–3 hours</strong> coverage</li>
+              <li><strong>60+ edited</strong> images</li>
+              <li>Online gallery delivery</li>
+              <li>Personal or commercial usage (as agreed)</li>
+              <li>Turnaround: 10–14 days</li>
+            </ul>
+
+            <button class="btn ghost full js-open-booking">
+              Request a Quote
+            </button>
+          </article>
+        </div>
+
+        <!-- PRICING NOTE -->
+        <div
+          class="container"
+          style="
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid var(--line);
+            text-align: center;
+          "
+        >
+          <p
+            class="micro muted"
+            style="line-height: 1.6; max-width: 600px; margin: 0 auto"
+          >
+            Travel fees may apply for locations outside central Tokyo. Basic
+            retouching included; advanced editing available upon request.
+          </p>
+        </div>
+      </section>
+
+      <!-- WHAT'S INCLUDED -->
+      <section class="section section-included">
+        <div class="container">
+          <div class="section-head">
+            <h2>What’s Included</h2>
+            <p class="muted">
+              Every session is approached with care, direction, and attention to
+              detail.
+            </p>
+          </div>
+
+          <div class="about-points">
+            <div class="point">
+              <h3>Guided Direction</h3>
+              <p>
+                You’ll never be left wondering what to do. I gently guide poses
+                while keeping everything natural.
+              </p>
+            </div>
+
+            <div class="point">
+              <h3>Professional Editing</h3>
+              <p>
+                Each image is carefully color-corrected and retouched in my
+                signature style.
+              </p>
+            </div>
+
+            <div class="point">
+              <h3>Private Online Gallery</h3>
+              <p>
+                Download, share, and relive your session through a private,
+                easy-to-use gallery.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section alt">
+        <div class="container faq">
+          <h3>FAQs</h3>
+
+          <div class="faq-grid">
+            <details>
+              <summary>Do you charge extra for travel?</summary>
+              <p>
+                Travel within central Tokyo is included. Locations outside Tokyo
+                may require a small travel fee.
+              </p>
+            </details>
+
+            <details>
+              <summary>What if the weather is bad?</summary>
+              <p>
+                We can reschedule once at no charge or switch to a suitable
+                indoor location.
+              </p>
+            </details>
+
+            <details>
+              <summary>Can I get the RAW files?</summary>
+              <p>
+                RAW files are not included by default but can be provided for an
+                additional fee upon request.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head" style="text-align: center; margin-bottom: 32px;">
+            <h2>Ready to Plan Your Session?</h2>
+            <p class="muted">
+              Tell me what you're envisioning and I'll reply within 24–48 hours with availability and next steps.
+            </p>
+          </div>
+          <div class="work-cta">
+            <button class="btn primary js-open-booking">Book a Session</button>
+            <a href="portfolio.html" class="btn ghost"> View Portfolio </a>
+            <p class="micro muted" style="margin-top: 16px;">
+              Deposit to confirm. Payment methods can be customized.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <div class="footer-brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <div>
+              <div class="footer-name">Hana Kuroda Photography</div>
+              <div class="micro muted">Tokyo • Available for travel</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-right" aria-label="Contact links">
+          <a
+            class="icon-link"
+            href="mailto:hello@example.com"
+            aria-label="Email"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4 6.5h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2Zm0 2 8 5 8-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+
+          <a class="icon-link" href="tel:+819012345678" aria-label="Phone">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6.5 3.8h3.1l1.2 4-2 1.8c1.3 2.6 3.4 4.7 6 6l1.8-2 4 1.2v3.1c0 1-.8 1.9-1.9 1.9C10.6 20 4 13.4 4 5.7c0-1 .8-1.9 1.9-1.9Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+
+          <a class="icon-link" href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+
+          <a class="icon-link" href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7.5 3.8h9A3.7 3.7 0 0 1 20.2 7.5v9a3.7 3.7 0 0 1-3.7 3.7h-9A3.7 3.7 0 0 1 3.8 16.5v-9A3.7 3.7 0 0 1 7.5 3.8Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <path
+                d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+              <path
+                d="M17.2 6.9h.01"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p class="micro muted">
+          © <span id="year"></span> Hana Kuroda. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- BOOKING MODAL (used by modal-booking.js) -->
+    <div
+      class="modal"
+      hidden
+      aria-label="Booking form"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal-card" role="document">
+        <button
+          class="modal-close"
+          type="button"
+          aria-label="Close booking form"
+        >
+          ×
+        </button>
+
+        <div class="modal-head">
+          <h2 class="modal-title">Book a Session</h2>
+          <p class="micro muted">
+            I'll reply within 24–48 hours with availability and next steps.
+          </p>
+        </div>
+
+        <!-- Netlify-compatible (optional). Works as normal HTML form too. -->
+        <form
+          class="form modal-form"
+          name="inquiry"
+          method="POST"
+          data-netlify="true"
+        >
+          <input type="hidden" name="form-name" value="inquiry" />
+
+          <div class="row">
+            <label>
+              <span>First Name*</span>
+              <input
+                name="firstName"
+                type="text"
+                autocomplete="given-name"
+                required
+              />
+            </label>
+            <label>
+              <span>Last Name</span>
+              <input name="lastName" type="text" autocomplete="family-name" />
+            </label>
+          </div>
+
+          <div class="row">
+            <label>
+              <span>Email*</span>
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              <span>Phone*</span>
+              <input name="phone" type="tel" autocomplete="tel" required />
+            </label>
+          </div>
+
+          <div class="row">
+            <label>
+              <span>Service Needed*</span>
+              <select name="serviceNeeded" required>
+                <option value="" selected disabled>Select one</option>
+                <option>Wedding</option>
+                <option>Couples</option>
+                <option>Family</option>
+                <option>Headshots</option>
+                <option>Portraits</option>
+                <option>Event</option>
+                <option>Commercial</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Event / Session Date*</span>
+              <input name="sessionDate" type="date" required id="sessionDate" />
+            </label>
+          </div>
+
+          <div class="row">
+            <label>
+              <span>Budget (optional)</span>
+              <select name="budget">
+                <option value="" selected>Not sure yet</option>
+                <option>Under ¥30,000</option>
+                <option>¥30,000–¥60,000</option>
+                <option>¥60,000–¥100,000</option>
+                <option>¥100,000+</option>
+              </select>
+            </label>
+
+            <label>
+              <span>How did you hear about me?</span>
+              <input
+                name="referralSource"
+                type="text"
+                placeholder="Instagram / friend / Google..."
+              />
+            </label>
+          </div>
+
+          <label>
+            <span>Location / Venue</span>
+            <input name="venue" type="text" placeholder="City / venue / area" />
+          </label>
+
+          <label>
+            <span>Message / Details*</span>
+            <textarea
+              name="message"
+              rows="5"
+              required
+              placeholder="Tell me about your vision, preferred location, vibe, and any questions."
+            ></textarea>
+          </label>
+
+          <label class="check">
+            <input name="bwPreference" type="checkbox" value="Yes" />
+            <span>I'd like a few black & white edits</span>
+          </label>
+
+          <button class="btn primary full" type="submit">Send Inquiry</button>
+
+          <p class="micro muted">
+            By submitting, you agree that you'll be contacted about your
+            inquiry.
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" aria-label="Back to top" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="modal-booking.js"></script>
+  </body>
+</html>
